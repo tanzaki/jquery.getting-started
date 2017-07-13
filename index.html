@@ -1,4 +1,4 @@
-<a href="https://www.w3schools.com/jquery/jquery_selectors.asp"></a>
+<a href="https://www.w3schools.com/jquery/jquery_events.asp"></a>
 <script src="jquery.min.js"></script>
 <h2>What is jQuery?</h2>
 <p>jQuery is a lightweight, "write less, do more", JavaScript library.</p>
@@ -19,7 +19,9 @@
 <hr>
 <script>
     $(function(){
-        $("p").hide();
-        $("li").css('color','blue');
+        $("p").click(function(){
+            // action goes here!!
+            $("p").hide();
+        });
     });
 </script>
