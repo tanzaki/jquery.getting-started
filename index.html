@@ -1,4 +1,4 @@
-<a href="https://www.w3schools.com/jquery/jquery_hide_show.asp"></a>
+<a href="https://www.w3schools.com/jquery/jquery_callback.asp"></a>
 <script src="jquery.min.js"></script>
 <h2>What is jQuery?</h2>
 <p>jQuery is a lightweight, "write less, do more", JavaScript library.</p>
@@ -19,15 +19,12 @@
 <hr>
 
 <button id="hide">Hide</button>
-<button id="show">Show</button>
 <script>
     $(function(){
-
-        $("#hide").click(function(){
-            $("p").hide();
-        });
-        $("#show").click(function(){
-            $("p").show();
+        $("button").click(function(){
+            $("p").hide("slow", function(){
+                alert("The paragraph is now hidden");
+            });
         });
     });
 </script>
