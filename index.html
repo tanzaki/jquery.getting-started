@@ -1,4 +1,4 @@
-<a href="https://www.w3schools.com/jquery/jquery_callback.asp"></a>
+<a href="https://www.w3schools.com/jquery/jquery_chaining.asp"></a>
 <script src="jquery.min.js"></script>
 <h2>What is jQuery?</h2>
 <p>jQuery is a lightweight, "write less, do more", JavaScript library.</p>
@@ -22,9 +22,7 @@
 <script>
     $(function(){
         $("button").click(function(){
-            $("p").hide("slow", function(){
-                alert("The paragraph is now hidden");
-            });
+            $("p").css("color", "red").slideUp(1000).slideDown(1000);
         });
     });
 </script>
